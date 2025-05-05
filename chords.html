@@ -5,7 +5,7 @@
 		- with Chrome
 		- "Save as PDF", not "Microsoft Print to PDF" (to retain working links)
 		- as A5
-		- include backgrounds
+		- include backgrounds / background graphics
 	-->
 	<title>Chords</title>
 	<meta charset= "utf-8"/>
@@ -25,6 +25,7 @@
 		height: 992px;
 		display: flex;
 		flex-direction: column;
+		overflow-y: auto;
 	}
 	h1 {
 		font-size: 19pt;
@@ -54,6 +55,10 @@
 		font-family: "Ubuntu Mono", monospace;
 		font-weight: 900;
 		font-size: 18pt;
+	}
+	.inline-instruction {
+		color: black;
+		background-color: #BBBBBB;
 	}
 	c.sustain::after {
 		content: "\2014\2014";
@@ -520,16 +525,16 @@ Oh I<c>Am</c>sing, oh I<c>G</c>sing, oh I<c>C</c>sing</p>
 <div class="marker">[Chorus]</div>
 <p>I<c>F</c>do</p>
 
-<p>Oooh oooh oo<c>C</c>oh<br/>
-Oooh oooh oo<c>F</c>oh<br/>
-Oooh oooh oo<c>C</c>oh<c>G</c></p>
+<p>Ooh ooh ooh ooh ooh ooh ooh<c>C</c>ooh<br/>
+Ooh ooh ooh ooh ooh ooh ooh<c>F</c>ooh<br/>
+Ooh ooh ooh ooh ooh ooh ooh<c>C</c>ooh ooh<c>G</c>ooh</p>
 
 <p><c>F</c>Give me nights of solitude<br/>
 <c>C</c>Red wine just a glass or two<br/>
 <c>F</c>Give me something fun to do<c>C  G</c></p>
 
 <div class="marker">[Chorus]</div>
-<p>I<c>F</c>do</p>
+<p>I do</p>
 <div class="marker">[Chorus]</div>
 <div>I<c class="sustain">F</c>do do do do do do<c class="sustain">C</c>do</div>
 </div>
@@ -1591,9 +1596,9 @@ But it<c>A</c>seems I've been running in the<c>Bm</c>wrong direction</p>
 
 <div class="marker">[Chorus] [2x]</div>
 
-<p>It<c>A</c>seems I've been running in the<c>Bm</c>wrong direction<c>G D</c><br/>
-It<c>A</c>seems I've been running in the<c>Bm</c>wrong direction<c>G D</c><br/>
-It<c>A</c>seems I've been running in the<c>Bm</c>wrong direction<c>G D</c><br/>
+<div><c>G D</c></div>
+
+<p>It<c>A</c>seems like I'm running in the<c>Bm</c>wrong direction<c>G D</c><c class="inline-instruction">3x</c><br/>
 It<c class="sustain">A</c>seems I've been running in the<c class="sustain">Bm</c>wrong direction</p>
 </div>
 
