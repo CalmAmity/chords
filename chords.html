@@ -107,6 +107,8 @@
 	.page:not(.toc):has(+ .page):not(:has(+ .page > h1))::after {
 		content: "\279C";
 		font-size: 30pt;
+		height: 0;
+		overflow-y: hidden;
 		flex-grow: 1;
 		align-content: center;
 		text-align: center;
